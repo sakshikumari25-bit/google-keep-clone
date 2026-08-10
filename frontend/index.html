@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Notes App</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+  <!-- Header -->
+
+  <header class="header">
+
+    <button id="menuButton" class="menu-button">
+      ☰
+    </button>
+
+
+    <h1>
+      📝 Notes
+    </h1>
+
+
+    <input
+      id="searchInput"
+      class="search-input"
+      type="text"
+      placeholder="Search notes..."
+    >
+
+
+    <div class="profile">
+      •
+    </div>
+
+  </header>
+
+
+
+  <!-- Main Layout -->
+
+  <div class="page">
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+      <h2>Notes</h2>
+
+
+      <button
+        class="navigation-button active"
+        data-page="home"
+      >
+        🏠 Home
+      </button>
+
+
+      <button
+        class="navigation-button"
+        data-page="archive"
+      >
+        📦 Archive
+      </button>
+
+
+      <button
+        class="navigation-button"
+        data-page="trash"
+      >
+        🗑️ Trash
+      </button>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+
+      <!-- Add Note Box -->
+
+      <section class="note-form">
+
+
+        <input
+          id="titleInput"
+          type="text"
+          placeholder="Title"
+        >
+
+
+        <textarea
+          id="descriptionInput"
+          placeholder="Take a note..."
+        ></textarea>
+
+
+        <!-- Colors -->
+
+        <div class="form-bottom">
+
+
+          <div class="colors">
+
+
+            <button
+              class="color-button white"
+              data-color="#ffffff"
+            ></button>
+
+
+            <button
+              class="color-button yellow"
+              data-color="#fff475"
+            ></button>
+
+
+            <button
+              class="color-button green"
+              data-color="#ccff90"
+            ></button>
+
+
+            <button
+              class="color-button blue"
+              data-color="#a7ffeb"
+            ></button>
+
+
+            <button
+              class="color-button purple"
+              data-color="#d7aefb"
+            ></button>
+
+
+            <button
+              class="color-button pink"
+              data-color="#fbcfe8"
+            ></button>
+
+
+          </div>
+
+
+          <button id="addNoteButton" class="add-button">
+            + Add Note
+          </button>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Heading -->
+
+      <div class="heading">
+
+
+        <h2 id="pageTitle">
+          My Notes
+        </h2>
+
+
+        <span id="noteCount">
+          0 notes
+        </span>
+
+
+        <button id="clearButton" class="clear-button">
+          Clear All
+        </button>
+
+
+      </div>
+
+
+
+      <!-- Notes will come here -->
+
+      <section id="notesContainer" class="notes-container">
+      </section>
+
+
+    </main>
+
+  </div>
+
+
+
+  
+
+ <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
