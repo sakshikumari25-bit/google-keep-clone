@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:5000/api/notes";
-
+const API_URL = "https://google-keep-clone-111j.onrender.com/api/notes";
 
 let notes = [];
 
